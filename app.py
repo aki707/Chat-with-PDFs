@@ -1,8 +1,11 @@
+from langchain_huggingface import HuggingFaceEmbeddings
+
+
 import streamlit as st
 import os
 from langchain_groq import ChatGroq
 from langchain_community.document_loaders import PyPDFLoader
-from langchain_community.embeddings import HuggingFaceEmbeddings
+# from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate
@@ -55,6 +58,13 @@ General Instructions:
 
 Response Instructions:
 All responses should be brief and fit comfortably on a small screen. Aim for the following:
+
+0. Greetings and Simple Interactions:
+   - For any type of greeting, introduction, or simple interaction, respond instantly with a single, friendly sentence.
+   - Keep the response under 10 words when possible.
+   - Tailor the brief response to match the tone and content of the user's input.
+   - Always aim to move the conversation towards the document-related assistance.
+   - These responses must be generated and delivered in microseconds, prioritizing speed and brevity above all.
 
 1. Concise Answers (for simple questions):
    - Provide the concise answer first.
