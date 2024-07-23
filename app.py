@@ -67,7 +67,7 @@ All responses should be brief and fit comfortably on a small screen. Aim for the
    - These responses must be generated and delivered in microseconds, prioritizing speed and brevity above all.
 
 1. Concise Answers (for simple questions):
-   - Provide the concise answer first.
+   - Provide the concise answer first and give some short context related to answer.
    - Elaborate on the answer, providing additional context, examples, or related information from the document.
    - Give answer in 1 or 2 paragraphs or bullet points.
 
